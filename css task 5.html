@@ -1,48 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css_task5.css">
-    <title>CSS TASK-5</title>
-</head>
-<body>
-    <div><a href="./index.html">Back to Index Page</a></div>
-    <br>
-    <div class="content">
-        <table class="table" cellpadding="5px" cellspacing="0px">
-            <tr>
-                <td class="first"><a href="#">Home page</a></td>
-                <td class="second"></td>
-            </tr>
-            <tr>
-                <td class="first"><a href="#">Musings</a></td>
-                <td class="second"></td>
-            </tr>
-            <tr>
-                <td class="first"><a href="#">My town</a></td>
-                <td class="second"></td>
-            </tr>
-            <tr>
-                <td class="first"><a href="#">Links</a></td>
-                <td class="second"></td>
-            </tr>
-        </table>
-        <div style="position: absolute; top: 2%; margin-left: 80px; margin-top: 30px; padding:20px 0px 0px 110px; color:purple;">
-            <h1 style="font-family: Arial; font-size: 30px;">My first styled page</h1>
-            <p>Welcome to my styled page!</p>
-            <p>It lacks images , but at least it has style.
-                And it<br>has links, even if they don't go
-                anywhere...
-            </p>
-            <p>There should be more here, but I don't know
-                <br>what yet.
-            </p>
-            <p>..................................................................................</p>
-            <p>
-                <i>Made 5 April 2004 <br> by myself.</i>
-            </p>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My first styled page(css-5)</title>
+    <style>
+      a:hover {
+        color: red;
+      }
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #d8d36e;
+      }
+
+      .container {
+        display: flex;
+        height: 100vh;
+        align-items: flex-start;
+      }
+
+      nav {
+        background-color: #d8d36e;
+        padding: 10px;
+        margin-top: 2.5rem;
+      }
+
+      nav ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      nav ul li {
+        margin-bottom: 10px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: #5a01a7;
+        padding: 10px;
+        display: block;
+        background-color: #ffffff;
+        border-right: 20px solid #000000;
+      }
+
+      .content {
+        padding: 20px;
+      }
+
+      h1 {
+        color: #5a01a7;
+        font-size: 2em;
+      }
+
+      footer {
+        margin-top: 20px;
+        border-top: 1px dashed #5a01a7;
+        padding-top: 10px;
+      }
+
+      footer p {
+        color: #5a01a7;
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="#">Home page</a></li>
+          <li><a href="#">Musings</a></li>
+          <li><a href="#">My town</a></li>
+          <li><a href="#">Links</a></li>
+        </ul>
+      </nav>
+      <div class="content">
+        <h1>My first styled page</h1>
+        <p>Welcome to my styled page!</p>
+        <p>
+          It lacks images, but at least it has style. And it has links, even if
+          they don't go anywhere...
+        </p>
+        <p>There should be more here, but I don't know what yet.</p>
+        <footer>
+          <p>
+            <em>Made 14 Jun 2024<br />by myself.</em>
+          </p>
+        </footer>
+      </div>
     </div>
-</body>
+  </body>
 </html>
