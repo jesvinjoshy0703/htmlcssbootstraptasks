@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Task3</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        div{
+            background-color:lightgray;
+            display: block;
+            padding: 1rem;
+            margin: auto;
+            border: 0.28rem ridge white;
+        }
+        a{
+            color: blue;
+        }
+        .frame{
+            display: block;
+            margin-top: 1rem;
+            width: 75rem;
+            height: 45rem;
+            
+        }
+    </style>
+</head>
+<body>
+    <div >
+        Click any of the following links <br><br>
+        <a href="https://www.pbs.org/wnet/nature/files/2014/10/Monkey-Main-1280x720.jpg" target="_blank">Opens in New</a>
+        |
+        <a href="https://www.pbs.org/wnet/nature/files/2014/10/Monkey-Main-1280x720.jpg" target="_self">Opens in self</a>
+        |
+        <a href="https://www.pbs.org/wnet/nature/files/2014/10/Monkey-Main-1280x720.jpg" target="_parent">Opens in parent</a>
+        |
+        <a href="https://www.pbs.org/wnet/nature/files/2014/10/Monkey-Main-1280x720.jpg" target="frame">Opens in body</a>
+        |
+        <a href="mailto:darkviperalan@gmail.com &body=Hi how are u?">Send an email</a>
+    </div>
+    <iframe frameborder="1" name="frame" class="frame"></iframe>
+</body>
+</html>
